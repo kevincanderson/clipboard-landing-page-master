@@ -1,6 +1,250 @@
+/* ---- COLORS ---- */
+/* ---- PRIMARY ---- */
+/* ---- STRONG CYAN : #26BAA4 ---- */
+/* ---- LIGHT BLUE : #6173FF ---- */
+/* ---- NEUTRAL ---- */
+/* ---- DARK GRAYISH BLUE : #4C545D ---- */
+/* ---- GRAYISH BLUE :  #9FABB2 ---- */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 731px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  padding: 80px 0;
+}
+
+/* -------------------------------- */
+/* --- BUTTONS --- */
+/* -------------------------------- */
+
+.buttons {
+  text-align: center;
+  margin-top: 61px;
+}
+
+.btn {
+  width: 227px;
+  height: 56px;
+  border-radius: 28px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding: 13px 30px;
+  color: #fff;
+}
+
+.btn-cyan {
+  background-color: #26bba4;
+  box-shadow: 0 10px 20px 0 rgba(137, 229, 199, 0.5),
+    inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-blue {
+  background-color: #6173ff;
+  margin-left: 16px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
+    inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------------------- */
+/*---- HEADINGS & TEXT STYLING ---- */
+/* -------------------------------- */
+
+.container h1 {
+  text-align: center;
+  font-size: 46px;
+  color: #4c545d;
+  letter-spacing: 0.15px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #4c545d;
+  letter-spacing: 0.59px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  padding-top: 56px;
+  letter-spacing: -0.39px;
+}
+.workflow h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 100%;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #9fabb2;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.features p,
+.workflow p {
+  font-size: 16px;
+  margin-top: 8px;
+  padding-top: 8px;
+  line-height: 1.88;
+  letter-spacing: 0.12px;
+}
+
+.container p,
+.workflow p {
+  text-align: center;
+}
+
+/* -------------------------------- */
+/* --- HEADER --- */
+/* -------------------------------- */
+
+header {
+  width: 100%;
+  background-image: url(../images/bg-header-desktop.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+/* -------------------------------- */
+/* --- FEATURES --- */
+/* -------------------------------- */
+
+.features {
+  display: flex;
+  padding-top: 0px;
+}
+
+.features img {
+  margin-left: -55px;
+}
+
+.features-list {
+  margin-left: 110px;
+}
+
+.feature {
+  width: 350px;
+}
+
+/* -------------------------------- */
+/* --- ACCESS --- */
+/* -------------------------------- */
+
+.access {
+  padding-bottom: 0;
+}
+
+.access img {
+  margin: 100px 0 0 -75px;
+}
+
+/* -------------------------------- */
+/* --- WORKFLOW --- */
+/* -------------------------------- */
+
+.workflow {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 76px;
+}
+
+.workflow div {
+  flex-grow: 1;
+  width: 33%;
+  padding: 10px;
+  align-items: top;
+  height: 300px;
+}
+
+.workflow div img {
+  display: block;
+  margin: 0 auto;
+  height: 45px;
+  width: auto;
+}
+
+/* -------------------------------- */
+/* --- COMPANIES --- */
+/* -------------------------------- */
+
+.companies {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -------------------------------- */
+/* --- FOOTER --- */
+/* -------------------------------- */
+
+.footer {
+  background-color: #9fabb2;
+  padding: 39px 0;
+}
+
+.footer-flex {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-logo {
+  display: block;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  width: 655px;
+}
+.footer li {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  width: 161px;
+  height: 30px;
+  letter-spacing: 0.14px;
+  line-height: 1.67;
+}
+
+.footer-social {
+}
+
+.footer-social img {
+  margin-left: 24px;
 }
