@@ -16,7 +16,6 @@
 
 body {
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 .container {
@@ -58,6 +57,21 @@ section {
 .btn-blue {
   background-color: #6173ff;
   margin-left: 16px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
+    inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-cyan:link,
+.btn-cyan:hover {
+  background-color: #26bba4;
+  box-shadow: 0 10px 20px 0 rgba(137, 229, 199, 0.5),
+    inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-blue:link,
+.btn-blue:hover {
+  background-color: #6173ff;
+
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
     inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
 }
@@ -152,7 +166,7 @@ header {
 }
 
 .feature {
-  width: 350px;
+  width: 20%;
 }
 
 /* -------------------------------- */
@@ -201,7 +215,7 @@ header {
 /* -------------------------------- */
 
 .companies {
-  width: 75%;
+  max-width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -226,10 +240,6 @@ header {
   align-items: center;
 }
 
-.footer ul {
-  list-style: none;
-}
-
 .footer-logo {
   display: block;
   height: 55px;
@@ -237,6 +247,7 @@ header {
 }
 
 .footer-links {
+  list-style: none;
   width: 655px;
 }
 .footer li {
@@ -249,9 +260,128 @@ header {
   line-height: 1.67;
 }
 
-.footer-social {
+.footer a,
+.footer a:link,
+.footer a:visited {
+  text-decoration: none;
+  color: #4c545d;
+}
+.footer a:hover,
+.footer a:active {
+  text-decoration: none;
+  color: #26baa4;
 }
 
 .footer-social img {
   margin-left: 24px;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 311px;
+  }
+
+  .main-logo {
+    width: 124px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+  .btn-blue {
+    margin: 24px 0 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+  .features img {
+    display: block;
+    max-width: 311px;
+    margin: 0 auto;
+  }
+
+  .features-list {
+    width: 311px;
+    margin: 0 auto;
+  }
+
+  .feature {
+    width: 100%;
+    text-align: center;
+  }
+
+  .access img {
+    width: 100%;
+    display: block;
+    margin: 64px auto 0;
+  }
+
+  .workflow {
+    flex-direction: column;
+  }
+
+  .workflow div {
+    width: 100%;
+  }
+
+  .companies {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .companies img {
+    margin-bottom: 57px;
+  }
+
+  .footer-links {
+    width: 25%;
+  }
+
+  .footer-flex {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer li {
+    display: block;
+    width: 311px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .footer-social img {
+    margin: 50px 20px 0;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container h1 {
+    font-size: 32px;
+    letter-spacing: -0.52px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.12px;
+  }
 }
