@@ -15,7 +15,8 @@
 }
 
 body {
-  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -137,7 +138,9 @@ header {
 
 .features {
   display: flex;
+  margin: 0 auto;
   padding-top: 0px;
+  max-width: 1440px;
 }
 
 .features img {
